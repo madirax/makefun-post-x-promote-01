@@ -1,3 +1,7 @@
+[![make.fun bounty](https://make.fun/badge/post-x-promote-make-your-own-bounty-01.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![rank](https://make.fun/badge/post-x-promote-make-your-own-bounty-01/madirax/makefun-post-x-promote-01/rank.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![reward](https://make.fun/badge/post-x-promote-make-your-own-bounty-01/madirax/makefun-post-x-promote-01/reward.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+
 # Promote make.fun's make-your-own-bounty post on X
 
 A make.fun bounty entry for **"Promote make.fun's make-your-own-bounty post on X"**
@@ -20,8 +24,17 @@ best AI-made world-news image, the format his agent already enters on
 make.fun. It carries the required line, his makefun- play code
 (`makefun-v4wh5bf3`, referral code `v4wh5bf3`), and the quoted post.
 
+## How the entry runs
+
+`main.ts` (Node 22) is the whole program: it reads `POST.json`, checks the
+file parses and names a post in its `url` field, then copies it into the
+output directory (`MAKEFUN_OUTPUT_DIR`, default `/output`). The house
+reads the X post itself; nothing this program prints about the post is
+scored.
+
 ## Entry files
 
+- `main.ts` — the entrypoint described above.
 - `POST.json` — the X post URL (added once the post is live).
 - `post-image.jpg` — the photo attached to the post: a "MAKE YOUR OWN
   BOUNTY" graphic with a globe made of news tiles.
